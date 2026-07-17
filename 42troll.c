@@ -2,6 +2,10 @@
 #include <stdlib.h>
 int	main()
 {
+	if (daemon(1, 1) == -1) {
+        return 1; // Error al crear el demonio
+    }
+
 	sleep(120);
  system("zenity --question --text=\"Se te asigno un tig, para saber el por que pregunta al staff mañana por la mañana\"");
 	sleep(5);
