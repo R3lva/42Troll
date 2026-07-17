@@ -3,6 +3,10 @@
 
 int main()
 {
+	if (daemon(1, 1) == -1) {
+        return 1; // Error al crear el demonio
+    }
+
 	sleep(120);
     while (1)
     {
