@@ -1,0 +1,25 @@
+#include <unistd.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    while (1)
+    {
+        system("gsettings set org.gnome.desktop.input-sources sources \"[('xkb', 'es')]\"");
+        sleep(5);
+        system("gsettings set org.gnome.desktop.input-sources sources \"[('xkb', 'us')]\"");
+        sleep(5);
+        system("gsettings set org.gnome.desktop.input-sources sources \"[('xkb', 'fr')]\"");
+        sleep(5);
+        system("gsettings set org.gnome.desktop.input-sources sources \"[('xkb', 'de')]\"");
+        sleep(5);
+        system("gsettings set org.gnome.desktop.input-sources sources \"[('xkb', 'ru')]\"");
+        sleep(5);
+        system("gsettings set org.gnome.desktop.input-sources sources \"[('xkb', 'it')]\"");
+        sleep(5);
+
+        i++; 
+    }
+	   return 0;
+}
