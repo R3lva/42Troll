@@ -19,7 +19,6 @@ int main()
         system("gsettings set org.gnome.desktop.input-sources sources \"[('xkb', 'it')]\"");
         sleep(5);
 
-        i++; 
     }
 	   return 0;
 }
