@@ -3,7 +3,7 @@
 
 int main()
 {
-
+	sleep(120);
     while (1)
     {
         system("gsettings set org.gnome.desktop.input-sources sources \"[('xkb', 'es')]\"");
